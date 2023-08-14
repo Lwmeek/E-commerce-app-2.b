@@ -1,0 +1,19 @@
+{
+  "name": "e-commerce-app-2.b",
+  "version": "1.0.0",
+  "description": "app for frontendmentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "e-commerce 2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5"
+  }
+}
