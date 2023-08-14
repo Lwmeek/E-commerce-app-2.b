@@ -19,3 +19,33 @@ body {
 	font-size: 1.6rem;
 	font-family: "Kumbh Sans", sans-serif;
 }
+.main_container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 2rem 1rem 3.5rem;
+    background-color: var(--clr-white);
+}
+.navbar .container-fluid {
+    justify-content: space-between;
+}
+.logo {
+    padding-bottom: 6px;
+    padding-left: 6px;
+    color: var(--clr-black);
+}
+.cart {
+    padding-right: 2rem;
+}
+.avatar {
+    width: 2.5rem;
+}
+.item_photo {
+    margin-top: 5rem;
+}
+.item_photo img {
+    width: 100%;
+    height: 34rem;
+}
