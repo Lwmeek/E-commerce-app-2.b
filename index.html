@@ -31,7 +31,7 @@
 							aria-controls="offcanvasNavbar"
 							aria-label="Toggle navigation"
 						>
-							<img src="images/icon-menu.svg" alt="menu button"/>
+							<img src="images/icon-menu.svg" alt="menu button" />
 						</button>
 						<a class="logo"><img src="images/logo.svg" alt="logo" /></a>
 					</div>
@@ -40,54 +40,37 @@
 						<img class="avatar" src="images/image-avatar.png" alt="avatar" />
 					</div>
 					<div
-						class="offcanvas offcanvas-end"
+						class="offcanvas offcanvas-start align-items-start justify-content-end"
 						tabindex="-1"
 						id="offcanvasNavbar"
 						aria-labelledby="offcanvasNavbarLabel"
 					>
 						<div class="offcanvas-header">
-							<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-								Offcanvas
-							</h5>
 							<button
 								type="button"
-								class="btn-close"
+								class="btn btn_close"
 								data-bs-dismiss="offcanvas"
 								aria-label="Close"
-							></button>
+							>
+								<img src="images/icon-close.svg" alt="" />
+							</button>
 						</div>
 						<div class="offcanvas-body">
-							<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#"
-										>Home</a
-									>
+							<ul class="navbar-nav justify-content-end flex-grow-1 ms-4">
+								<li class="navbar_item">
+									<option value="collections">Collections</option>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Link</a>
+								<li class="navbar_item">
+									<option value="men">Men</option>
 								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										Dropdown
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Another action</a>
-										</li>
-										<li>
-											<hr class="dropdown-divider" />
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</li>
-									</ul>
+								<li class="navbar_item">
+									<option value="women">Women</option>
+								</li>
+								<li class="navbar_item">
+									<option value="about">About</option>
+								</li>
+								<li class="navbar_item">
+									<option value="contact">Contact</option>
 								</li>
 							</ul>
 						</div>
@@ -102,22 +85,24 @@
 				<h2>Fall Limited Edition Sneakers</h2>
 				<p class="product_info">
 					These low-profile sneakers are your perfect casual wear companion.
-					Featureing a durable rubber outer sole, they'll withstand everything
+					Featuring a durable rubber outer sole, they'll withstand everything
 					the weather can offer.
 				</p>
 				<div class="price">
-					<p class="new_price">$125.00</p>
-					<span class="badge">50%</span>
+					<div class="price_group_one">
+						<p class="new_price">$125.00</p>
+						<span class="badge">50%</span>
+					</div>
 					<p class="original_price">$250.00</p>
 				</div>
-				<footer class="d-grid gap-3 col-10 mx-auto">
+				<footer class="d-grid gap-3 col-12 mx-auto">
 					<button class="btn btn-secondary" type="button">
-						<img src="images/icon-minus.svg" alt="minus button" /> 
+						<img src="images/icon-minus.svg" alt="minus button" />
 						<p>0</p>
 						<img src="images/icon-plus.svg" alt="plus button" />
 					</button>
 					<button class="btn btn-primary" type="button">
-						<img src="images/icon-cart.svg" alt="cart icon" /> 
+						<img src="images/icon-cart.svg" alt="cart icon" />
 						<p>Add to cart</p>
 					</button>
 				</footer>
