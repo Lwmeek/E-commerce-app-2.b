@@ -48,6 +48,12 @@ p {
 .cart {
 	padding-right: 2rem;
 }
+.modal {
+	--bs-modal-border-radius: var(--bs-border-radius-xl);
+}
+.modal-body {
+	color: var(--clr-dark-grayish-blue);
+}
 .avatar {
 	width: 2.5rem;
 }

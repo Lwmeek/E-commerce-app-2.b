@@ -19,6 +19,33 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1
+							class="modal-title fs-2 ms-3 p-3 fw-bold"
+							id="exampleModalLabel"
+						>
+							Cart
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body text-center fw-bold">Your cart is empty</div>
+				</div>
+			</div>
+		</div>
 		<main class="main_container">
 			<nav class="navbar fixed-top">
 				<div class="container-fluid">
@@ -36,11 +63,18 @@
 						<a class="logo"><img src="images/logo.svg" alt="logo" /></a>
 					</div>
 					<div class="navbar_right">
-						<button class="btn">
+						<button
+							class="btn"
+							type="button"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal"
+						>
 							<img class="cart" src="images/icon-cart.svg" alt="items cart" />
 						</button>
+
 						<img class="avatar" src="images/image-avatar.png" alt="avatar" />
 					</div>
+
 					<div
 						class="offcanvas offcanvas-start align-items-start justify-content-end"
 						tabindex="-1"
@@ -81,10 +115,11 @@
 			</nav>
 			<div class="item_photo">
 				<div class="photo_selection">
-					<button class="btn previous select_container" alt="previous button">
-					</button>
-					<button class="btn next select_container" alt="next button">
-					</button>
+					<button
+						class="btn previous select_container"
+						alt="previous button"
+					></button>
+					<button class="btn next select_container" alt="next button"></button>
 				</div>
 				<img class="shoes" src="images/image-product-1.jpg" alt="tan shoes" />
 			</div>
