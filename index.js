@@ -32,6 +32,9 @@ const handleDecrease = () => {
 	}
 };
 const handleSubmit = () => {
+	let sum = parseInt(`${cartIcon.innerHTML}`, 10) + quantity;
+	console.log(sum);
+	cartIcon.innerHTML = sum;
 	quantity = 0;
 	amount.innerHTML = `${quantity}`;
 }
