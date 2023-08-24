@@ -45,8 +45,14 @@ p {
 	border-radius: 0rem;
 	border: none;
 }
-.cart {
-	padding-right: 2rem;
+.cart_btn {
+	padding: .3rem!important;
+}
+.cart-badge {
+	color: var(--clr-white);
+	background-color: var(--clr-orange);
+	border-radius: 30px;
+	padding: 3px 7px 1px;
 }
 .modal {
 	--bs-modal-border-radius: var(--bs-border-radius-xl);
@@ -156,7 +162,7 @@ p {
 	font-weight: 700;
 	font-size: xx-large;
 }
-.badge {
+.price-badge {
 	background-color: var(--clr-pale-orange);
 	color: var(--clr-orange);
 	font-size: medium;

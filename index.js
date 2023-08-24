@@ -2,9 +2,12 @@ const items = document.querySelector(".modal-body");
 const amount = document.querySelector(".amount");
 const increase = document.querySelector(".add");
 const decrease = document.querySelector(".subtract");
+const cartIcon = document.querySelector(".cart-badge");
+const submit = document.querySelector(".submit");
 
 let quantity = 0;
 amount.innerHTML = `${quantity}`;
+cartIcon.innerHTML = `${quantity}`;
 
 const cartStatus = () => {
 	if (quantity > 0) {
@@ -28,6 +31,12 @@ const handleDecrease = () => {
 		return (amount.innerHTML = `${quantity}`);
 	}
 };
+const handleSubmit = () => {
+	quantity = 0;
+	amount.innerHTML = `${quantity}`;
+}
 
 increase.addEventListener("click", handleIncrease);
 decrease.addEventListener("click", handleDecrease);
+
+submit.addEventListener("click", handleSubmit);
