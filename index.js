@@ -6,40 +6,47 @@ const cartIcon = document.querySelector(".cart-badge");
 const submit = document.querySelector(".submit");
 
 let quantity = 0;
-amount.innerHTML = `${quantity}`;
-cartIcon.innerHTML = `${quantity}`;
+items.insertAdjacentHTML("beforeend", "<p>Your cart is empty.<p>");
 
-const cartStatus = () => {
-	if (quantity > 0) {
-		return items.insertAdjacentHTML("beforeend", "<p>Your cart is full.<p>");
-	} else {
-		return items.insertAdjacentHTML("beforeend", "<p>Your cart is empty.<p>");
-	}
-};
-cartStatus();
+amount.innerHTML = quantity;
+cartIcon.innerHTML = quantity;
+
+console.log(cartIcon.innerHTML);
 console.log(amount.innerHTML);
 
 const handleIncrease = () => {
 	quantity++;
-	return (amount.innerHTML = `${quantity}`);
+	amount.innerHTML = quantity;
 };
 const handleDecrease = () => {
-	if (amount.innerHTML === "0") {
-		return (amount.innerHTML = 0);
+	if (quantity === 0) {
+		return amount.innerHTML = 0;
 	} else {
 		quantity--;
-		return (amount.innerHTML = `${quantity}`);
+		return amount.innerHTML = quantity;
 	}
 };
+
 const handleSubmit = () => {
-	let sum = parseInt(`${cartIcon.innerHTML}`, 10) + quantity;
-	console.log(sum);
+	let sum = 0;
+	sum = parseInt(`${cartIcon.innerHTML}`, 10) + quantity;
 	cartIcon.innerHTML = sum;
+	const cartStatus = () => {
+		if (quantity > 0) {
+			items.innerHTML = "";
+			return items.insertAdjacentHTML("beforeend", "<p>Your cart is full.<p>");
+		} else {
+			return;
+		}
+	};
+	cartStatus();
 	quantity = 0;
-	amount.innerHTML = `${quantity}`;
-}
+	amount.innerHTML = quantity;
+};
+
+
 
 increase.addEventListener("click", handleIncrease);
 decrease.addEventListener("click", handleDecrease);
-
 submit.addEventListener("click", handleSubmit);
+
