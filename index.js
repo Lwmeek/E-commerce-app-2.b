@@ -20,10 +20,10 @@ const handleIncrease = () => {
 };
 const handleDecrease = () => {
 	if (quantity === 0) {
-		return amount.innerHTML = 0;
+		return (amount.innerHTML = 0);
 	} else {
 		quantity--;
-		return amount.innerHTML = quantity;
+		return (amount.innerHTML = quantity);
 	}
 };
 
@@ -44,9 +44,6 @@ const handleSubmit = () => {
 	amount.innerHTML = quantity;
 };
 
-
-
 increase.addEventListener("click", handleIncrease);
 decrease.addEventListener("click", handleDecrease);
 submit.addEventListener("click", handleSubmit);
-

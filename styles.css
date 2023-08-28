@@ -19,6 +19,8 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: "Kumbh Sans", sans-serif;
+	padding-right: 0rem!important;
+	overflow: hidden;
 }
 .main_container {
 	height: 100vh;
@@ -56,6 +58,12 @@ p {
 }
 .modal {
 	--bs-modal-border-radius: var(--bs-border-radius-xl);
+	margin-top: 7.5rem;
+	height: 500px!important;
+}
+.modal-content {
+	height: 260px;
+	line-height: 140px;
 }
 .modal-body {
 	color: var(--clr-dark-grayish-blue);
