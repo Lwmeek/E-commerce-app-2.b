@@ -70,6 +70,11 @@ p {
 }
 .avatar {
 	width: 2.5rem;
+	border-radius: 50%;
+}
+.avatar:hover {
+	cursor: pointer;
+	border: 1.8px solid var(--clr-orange);
 }
 .offcanvas {
 	max-width: 70%;
