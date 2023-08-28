@@ -4,9 +4,12 @@ const increase = document.querySelector(".add");
 const decrease = document.querySelector(".subtract");
 const cartIcon = document.querySelector(".cart-badge");
 const submit = document.querySelector(".submit");
+const cartBtn = document.querySelector(".cart_btn");
 
 let quantity = 0;
 items.insertAdjacentHTML("beforeend", "<p>Your cart is empty.<p>");
+
+
 
 amount.innerHTML = quantity;
 cartIcon.innerHTML = quantity;
@@ -40,10 +43,22 @@ const handleSubmit = () => {
 		}
 	};
 	cartStatus();
+	cartBadgeDisplay();
 	quantity = 0;
 	amount.innerHTML = quantity;
 };
 
+const cartBadgeDisplay = () => {
+	if(quantity === 0) {
+	cartIcon.style.display = "none";
+	cartBtn.style.marginRight = "1.8rem";
+} else {
+	cartBtn.style.marginRight = "0rem";
+	cartIcon.style.display = "inline-block";
+}
+}
+
+cartBadgeDisplay();
 increase.addEventListener("click", handleIncrease);
 decrease.addEventListener("click", handleDecrease);
 submit.addEventListener("click", handleSubmit);
