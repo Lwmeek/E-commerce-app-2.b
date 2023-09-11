@@ -19,7 +19,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: "Kumbh Sans", sans-serif;
-	padding-right: 0rem!important;
+	padding-right: 0rem !important;
 	overflow: hidden;
 }
 .main_container {
@@ -48,7 +48,7 @@ p {
 	border: none;
 }
 .cart_btn {
-	padding: .3rem!important;
+	padding: 0.3rem !important;
 }
 .cart-badge {
 	color: var(--clr-white);
@@ -59,7 +59,7 @@ p {
 .modal {
 	--bs-modal-border-radius: var(--bs-border-radius-xl);
 	margin-top: 7.5rem;
-	height: 500px!important;
+	height: 500px !important;
 }
 .modal-content {
 	height: 260px;
@@ -81,11 +81,27 @@ p {
 	gap: 2rem;
 }
 .navbar-nav {
-	gap: 2rem;
+	gap: 1rem;
 }
 .navbar_item option {
 	font-weight: 700;
 	font-size: large;
+}
+.navbar_item option::after {
+	content: "";
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 3px;
+	background: orange;
+	margin-top: 1.5rem;
+	transition: opacity 0.5s ease;
+}
+.navbar_item option:hover {
+	cursor: pointer;
+}
+.navbar_item option:hover::after {
+	opacity: 1;
 }
 
 /* Product photo */
@@ -212,6 +228,9 @@ p {
 }
 .btn-primary img {
 	color: var(--clr-white);
+}
+.subtract {
+	filter: grayscale();
 }
 .quantity {
 	background-color: var(--clr-light-grayish-blue);

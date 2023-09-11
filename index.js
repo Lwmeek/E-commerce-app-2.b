@@ -9,8 +9,6 @@ const cartBtn = document.querySelector(".cart_btn");
 let quantity = 0;
 items.insertAdjacentHTML("beforeend", "<p>Your cart is empty.<p>");
 
-
-
 amount.innerHTML = quantity;
 cartIcon.innerHTML = quantity;
 
@@ -49,14 +47,14 @@ const handleSubmit = () => {
 };
 
 const cartBadgeDisplay = () => {
-	if(quantity === 0) {
-	cartIcon.style.display = "none";
-	cartBtn.style.marginRight = "1.8rem";
-} else {
-	cartBtn.style.marginRight = "0rem";
-	cartIcon.style.display = "inline-block";
-}
-}
+	if (quantity === 0) {
+		cartIcon.style.display = "none";
+		cartBtn.style.marginRight = "1.8rem";
+	} else {
+		cartBtn.style.marginRight = "0rem";
+		cartIcon.style.display = "inline-block";
+	}
+};
 
 cartBadgeDisplay();
 increase.addEventListener("click", handleIncrease);
