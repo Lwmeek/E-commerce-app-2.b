@@ -56,18 +56,6 @@ p {
 	border-radius: 30px;
 	padding: 3px 7px 1px;
 }
-.modal {
-	--bs-modal-border-radius: var(--bs-border-radius-xl);
-	margin-top: 7.5rem;
-	height: 500px !important;
-}
-.modal-content {
-	height: 260px;
-	line-height: 140px;
-}
-.modal-body {
-	color: var(--clr-dark-grayish-blue);
-}
 .avatar {
 	width: 2.5rem;
 	border-radius: 50%;
@@ -76,6 +64,69 @@ p {
 	cursor: pointer;
 	border: 1.8px solid var(--clr-orange);
 }
+
+/* Modal */
+.modal {
+	--bs-modal-border-radius: var(--bs-border-radius-xl);
+	margin-top: 7.5rem;
+	height: 500px !important;
+}
+.modal-content {
+	height: 260px;
+}
+.modal-body {
+	color: var(--clr-dark-grayish-blue);
+}
+.full-cart {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+.full-cart-top {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.cart-product {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5px;
+}
+.cart-delete {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.cart-details {
+	display: flex;
+	flex-direction: column;
+}
+.cart-price {
+	display: flex;
+	gap: 1rem;
+}
+.cart-price p:first-child {
+	font-weight: 500 !important;
+}
+.full-cart-bottom {
+	width: 95%;
+}
+.checkout-btn {
+	background-color: var(--clr-orange);
+	color: var(--clr-white);
+	font-size: medium;
+	font-weight: 700;
+	transition: all 0.3s;
+	width: 100%;
+}
+.checkout-btn:hover {
+	background-color: var(--clr-hover-orange);
+	color: var(--clr-white);
+}
+
+/* Offcanvas */
 .offcanvas {
 	max-width: 70%;
 	gap: 2rem;
