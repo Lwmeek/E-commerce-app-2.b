@@ -1,4 +1,5 @@
 const items = document.querySelector(".modal-body");
+const modalContent = document.querySelector(".modal-content");
 const amount = document.querySelector(".amount");
 const increase = document.querySelector(".add");
 const decrease = document.querySelector(".subtract");
@@ -7,6 +8,7 @@ const submit = document.querySelector(".submit");
 const cartBtn = document.querySelector(".cart_btn");
 
 let quantity = 0;
+modalContent.style.lineHeight = "10";
 items.insertAdjacentHTML("beforeend", "<p>Your cart is empty.<p>");
 
 amount.innerHTML = quantity;
@@ -34,8 +36,27 @@ const handleSubmit = () => {
 	cartIcon.innerHTML = sum;
 	const cartStatus = () => {
 		if (quantity > 0) {
+			modalContent.style.lineHeight = "2";
 			items.innerHTML = "";
-			return items.insertAdjacentHTML("beforeend", "<p>Your cart is full.<p>");
+			return items.insertAdjacentHTML(
+				"beforeend",
+				`<div class="full-cart">
+			<div class="full-cart-top">
+				<img class="cart-product" src="images/image-product-1-thumbnail.jpg" alt="Selected item thumbnail">
+				<div class="cart-details">
+					<h2>Fall Limited Edition Sneakers</h2>
+					<div class="cart-price">
+						<p>$125.00 x ${sum}</p>
+						<p>$${125 * sum}.00</p>
+					</div>
+				</div>
+				<img class="cart-delete" src="images/icon-delete.svg" alt="delete button">
+			</div>
+			<div class="full-cart-bottom">
+				<button class="btn checkout-btn">Checkout</button>
+			</div>
+		</div>`
+			);
 		} else {
 			return;
 		}

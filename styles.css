@@ -97,7 +97,8 @@ p {
 }
 .cart-delete {
 	width: 1.5rem;
-	height: 1.5rem;
+	height: 1.8rem;
+	cursor: pointer;
 }
 .cart-details {
 	display: flex;
