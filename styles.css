@@ -95,7 +95,7 @@ p {
 	height: 3px;
 	background: orange;
 	margin-top: 1.5rem;
-	transition: opacity 0.5s ease;
+	transition: opacity 0.3s ease;
 }
 .navbar_item option:hover {
 	cursor: pointer;
@@ -229,8 +229,9 @@ p {
 .btn-primary img {
 	color: var(--clr-white);
 }
-.subtract {
-	filter: grayscale();
+.subtract:hover,
+.add:hover {
+	opacity: 0.5;
 }
 .quantity {
 	background-color: var(--clr-light-grayish-blue);
