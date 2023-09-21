@@ -42,16 +42,14 @@
 							aria-label="Close"
 						></button>
 					</div>
-					<div class="modal-body text-center fw-bold">
-						
-					</div>
+					<div class="modal-body text-center fw-bold"></div>
 				</div>
 			</div>
 		</div>
 		<main class="main_container">
 			<nav class="navbar fixed-top">
 				<div class="container-fluid">
-					<div class="narbar_left">
+					<div class="navbar_left">
 						<button
 							class="btn"
 							type="button"
@@ -63,7 +61,27 @@
 							<img src="images/icon-menu.svg" alt="menu button" />
 						</button>
 						<a class="logo"><img src="images/logo.svg" alt="logo" /></a>
+						<div class="navbar_links">
+							<ul>
+								<li class="nav">
+									<option value="collections">Collections</option>
+								</li>
+								<li class="nav">
+									<option value="men">Men</option>
+								</li>
+								<li class="nav">
+									<option value="women">Women</option>
+								</li>
+								<li class="nav">
+									<option value="about">About</option>
+								</li>
+								<li class="nav">
+									<option value="contact">Contact</option>
+								</li>
+							</ul>
+						</div>
 					</div>
+					
 					<div class="navbar_right">
 						<button
 							class="btn cart_btn"
@@ -120,47 +138,49 @@
 					</div>
 				</div>
 			</nav>
-			<div class="item_photo">
-				<div class="photo_selection">
-					<button
-						class="btn previous select_container"
-						alt="previous button"
-					></button>
-					<button class="btn next select_container" alt="next button"></button>
-				</div>
-				<img class="shoes" src="images/image-product-1.jpg" alt="tan shoes" />
-			</div>
-			<div class="product_details">
-				<h1>Sneaker Company</h1>
-				<h2>Fall Limited Edition Sneakers</h2>
-				<p class="product_info">
-					These low-profile sneakers are your perfect casual wear companion.
-					Featuring a durable rubber outer sole, they'll withstand everything
-					the weather can offer.
-				</p>
-				<div class="price">
-					<div class="price_group_one">
-						<p class="new_price">$125.00</p>
-						<span class="badge price-badge">50%</span>
+			<section>
+				<div class="item_photo">
+					<div class="photo_selection">
+						<button
+							class="btn previous select_container"
+							alt="previous button"
+						></button>
+						<button class="btn next select_container" alt="next button"></button>
 					</div>
-					<p class="original_price">$250.00</p>
+					<img class="shoes" src="images/image-product-1.jpg" alt="tan shoes" />
 				</div>
-				<footer class="d-grid gap-4 col-12 mx-auto">
-					<div class="quantity">
-						<button class="btn subtract">
-							<img src="images/icon-minus.png" alt="minus button" />
-						</button>
-						<p class="amount"></p>
-						<button class="btn add">
-							<img src="images/icon-plus.svg" alt="plus button" />
-						</button>
+				<div class="product_details">
+					<h1>Sneaker Company</h1>
+					<h2>Fall Limited Edition Sneakers</h2>
+					<p class="product_info">
+						These low-profile sneakers are your perfect casual wear companion.
+						Featuring a durable rubber outer sole, they'll withstand everything
+						the weather can offer.
+					</p>
+					<div class="price">
+						<div class="price_group_one">
+							<p class="new_price">$125.00</p>
+							<span class="badge price-badge">50%</span>
+						</div>
+						<p class="original_price">$250.00</p>
 					</div>
-					<button class="btn btn-primary submit" type="button">
-						<img src="images/icon-cart-2.svg" alt="cart icon" />
-						<p>Add to cart</p>
-					</button>
-				</footer>
-			</div>
+					<footer class="d-grid gap-4 col-12 mx-auto">
+						<div class="quantity">
+							<button class="btn subtract">
+								<img src="images/icon-minus.png" alt="minus button" />
+							</button>
+							<p class="amount"></p>
+							<button class="btn add">
+								<img src="images/icon-plus.svg" alt="plus button" />
+							</button>
+						</div>
+						<button class="btn btn-primary submit" type="button">
+							<img src="images/icon-cart-2.svg" alt="cart icon" />
+							<p>Add to cart</p>
+						</button>
+					</footer>
+				</div>
+			</section>
 		</main>
 
 		<script
