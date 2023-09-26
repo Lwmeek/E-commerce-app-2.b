@@ -84,11 +84,11 @@ decrease.addEventListener("click", handleDecrease);
 submit.addEventListener("click", handleSubmit);
 
 /* Picture selection under photo */
-preview.forEach(picture => {
+preview.forEach((picture) => {
 	picture.addEventListener("click", () => {
-		preview.forEach(picture => {
-			picture.classList.remove("active")
+		preview.forEach((picture) => {
+			picture.classList.remove("active");
 		});
 		picture.classList.add("active");
-	})
-})
+	});
+});
