@@ -218,11 +218,11 @@ p {
 	width: 7rem;
 	height: 7rem;
 	border-radius: 7px;
-	transition: opacity .3s;
+	transition: opacity 0.3s;
 }
 .pics-preview-item:hover {
 	cursor: pointer;
-	opacity: .5;
+	opacity: 0.5;
 }
 
 /* Product details */
@@ -400,5 +400,9 @@ p {
 	}
 	.pics-preview {
 		display: flex;
+	}
+	.active {
+		border: 3px solid var(--clr-orange);
+		opacity: .5;
 	}
 }

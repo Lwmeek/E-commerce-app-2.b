@@ -6,6 +6,7 @@ const decrease = document.querySelector(".subtract");
 const cartIcon = document.querySelector(".cart-badge");
 const submit = document.querySelector(".submit");
 const cartBtn = document.querySelector(".cart_btn");
+const preview = document.querySelectorAll(".pics-preview-item");
 
 let quantity = 0;
 modalContent.style.lineHeight = "10";
@@ -81,3 +82,13 @@ cartBadgeDisplay();
 increase.addEventListener("click", handleIncrease);
 decrease.addEventListener("click", handleDecrease);
 submit.addEventListener("click", handleSubmit);
+
+/* Picture selection under photo */
+preview.forEach(picture => {
+	picture.addEventListener("click", () => {
+		preview.forEach(picture => {
+			picture.classList.remove("active")
+		});
+		picture.classList.add("active");
+	})
+})
