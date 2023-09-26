@@ -397,6 +397,7 @@ p {
 	.shoes {
 		height: 47rem;
 		border-radius: 15px;
+		max-width: 42rem;
 	}
 	.product_details {
 		flex-basis: 50%;
@@ -406,17 +407,52 @@ p {
 	}
 	.active {
 		border: 3px solid var(--clr-orange);
-		opacity: .5;
+		opacity: 0.5;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.product-section {
 		width: 90%;
-		margin: 20rem auto;
+		margin: 27rem auto;
 		gap: 7rem;
 	}
 	.pics-preview {
 		gap: 4.5rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.quantity {
+		width: 17rem;
+	}
+	.submit {
+		width: 30rem;
+	}
+	.product_details {
+		max-width: 59.3rem;
+	}
+	.product_details h1 {
+		font-size: medium;
+	}
+	.product_details h2 {
+		font-size: xxx-large;
+	}
+	.price {
+		flex-direction: column;
+		align-items: start;
+		gap: 1rem;
+	}
+	footer {
+		margin-top: 3rem;
+	}
+	.price-badge {
+		height: auto;
+	}
+	.price_group_one {
+		gap: 2rem;
+	}
+	.product_info {
+		font-size: 1.8rem;
 	}
 }

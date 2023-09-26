@@ -7,6 +7,12 @@ const cartIcon = document.querySelector(".cart-badge");
 const submit = document.querySelector(".submit");
 const cartBtn = document.querySelector(".cart_btn");
 const preview = document.querySelectorAll(".pics-preview-item");
+const footer = document.querySelector("#footer-parent");
+
+if (window.innerWidth > 1200) {
+	footer.classList.remove("col-12", "mx-auto");
+	footer.classList.add("d-md-flex");
+}
 
 let quantity = 0;
 modalContent.style.lineHeight = "10";
